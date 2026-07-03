@@ -310,7 +310,7 @@ export default function Index() {
           </p>
         </div>
         <div className="footer-bottom">
-          <span>2025 ПАРАЗИТам.НЕТ</span>
+          <span>2026 ПАРАЗИТам.НЕТ</span>
           <span>ДОСТУП 6 МЕСЯЦЕВ</span>
           <span>ПРОВЕРЕНО НА СЕБЕ</span>
         </div>

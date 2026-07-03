@@ -230,6 +230,14 @@ export default function Index() {
                 </div>
               ))}
             </div>
+            <div style={{ display: "flex", alignItems: "baseline", gap: "16px", marginBottom: "20px" }}>
+              <span style={{ fontSize: "22px", fontWeight: 700, color: "#888", textDecoration: "line-through" }}>
+                10 000 ₽
+              </span>
+              <span style={{ fontSize: "36px", fontWeight: 800, color: "var(--accent)" }}>
+                6 800 ₽
+              </span>
+            </div>
             <button className="btn-cta" style={{ background: "var(--accent)", color: "var(--dark)", borderColor: "white" }}>
               Приобрести доступ
             </button>

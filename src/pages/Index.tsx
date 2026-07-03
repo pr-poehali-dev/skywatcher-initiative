@@ -111,7 +111,7 @@ export default function Index() {
                 Сосальщики
               </span>
               <img
-                src="https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/files/602de184-ed9a-4231-9a5a-11ffb313c8d6.jpg"
+                src="https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/bucket/c5b4b2a5-d9e4-45d6-ad33-cb7cfd73f7e2.jpg"
                 alt="Трематоды"
               />
               <div className="menu-card-body">

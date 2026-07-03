@@ -175,7 +175,6 @@ export default function Index() {
               Пройти этим маршрутом
             </button>
           </div>
-          <div className="vibe-img"></div>
         </section>
 
         <section id="results" className="section-padding">
@@ -242,7 +241,6 @@ export default function Index() {
               Приобрести доступ
             </button>
           </div>
-          <div className="vibe-img"></div>
         </section>
       </main>
 

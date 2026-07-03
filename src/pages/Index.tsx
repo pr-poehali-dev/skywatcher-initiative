@@ -46,7 +46,14 @@ export default function Index() {
               </button>
             </div>
           </div>
-          <div className="hero-img">
+          <div
+            className="hero-img"
+            style={{
+              backgroundImage: "url(https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/bucket/d04bc576-67e7-4d64-b896-ea197a4fd70a.jpg)",
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          >
             <div className="sticker">
               ДОСТУП
               <br />6 МЕСЯЦЕВ

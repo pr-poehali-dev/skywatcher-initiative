@@ -245,17 +245,15 @@ nav a:hover {
 }
 
 .hero-img {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   min-height: 300px;
 }
 
 @media (min-width: 768px) {
   .hero-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--accent);
     min-height: auto;
   }
 }

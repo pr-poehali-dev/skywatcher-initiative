@@ -84,7 +84,7 @@ export default function Index() {
             <div className="menu-card">
               <span className="menu-tag">Ленточные</span>
               <img
-                src="https://cdn.poehali.dev/files/df7f57e1-8c9d-402c-8871-867ab2a24847.png"
+                src="https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/bucket/a5985a56-cad7-4823-b10b-53cd7b712a57.jpg"
                 alt="Цестоды"
               />
               <div className="menu-card-body">

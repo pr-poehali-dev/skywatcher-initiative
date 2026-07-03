@@ -138,7 +138,7 @@ export default function Index() {
                 Круглые
               </span>
               <img
-                src="https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/files/602de184-ed9a-4231-9a5a-11ffb313c8d6.jpg"
+                src="https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/bucket/14bcdcbd-7ad1-4473-9f0e-ad302313bd4c.jpg"
                 alt="Нематоды"
               />
               <div className="menu-card-body">

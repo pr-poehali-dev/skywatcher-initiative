@@ -1,80 +1,91 @@
+import Icon from "@/components/ui/icon";
+
 export default function Index() {
   return (
     <>
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">VINYL*DINER</div>
+        <div className="logo">ПАРАЗИТам.НЕТ</div>
         <nav>
-          <a href="#">Меню</a>
-          <a href="#">О нас</a>
-          <a href="#">Афиша</a>
-          <a href="#">Адреса</a>
+          <a href="#about">История</a>
+          <a href="#course">Программа</a>
+          <a href="#results">Результаты</a>
+          <a href="#buy">Кому подходит</a>
         </nav>
-        <button className="btn-cta">Забронировать</button>
+        <button className="btn-cta" onClick={() => document.getElementById("buy")?.scrollIntoView({ behavior: "smooth" })}>
+          Купить доступ
+        </button>
       </header>
 
       <main>
         <section className="hero">
           <div className="hero-content">
             <h1 className="hero-title">
-              БЕЗ ПОНТОВ,
+              УБЕРИ
               <br />
-              ТОЛЬКО <span>ВКУС</span>
+              ПРИЧИНУ, <span>а не симптом</span>
             </h1>
             <p className="text-base md:text-lg lg:text-xl mb-8 md:mb-10 leading-relaxed text-[#555]">
-              Эстетика 70-х в современной подаче. Локальные продукты, огненные блюда и атмосфера для настоящих ценителей.
+              Личная схема избавления от паразитов от Марины Берг — клинического психолога и эксперта по психосоматике. Проверено на себе, без БАДов, только аптечные препараты.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-5">
-              <button className="btn-cta" style={{ background: "var(--primary)", color: "white" }}>
-                Заказать
+              <button
+                className="btn-cta"
+                style={{ background: "var(--primary)", color: "white" }}
+                onClick={() => document.getElementById("buy")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                Получить доступ
               </button>
-              <button className="btn-cta" style={{ background: "white" }}>
-                Смотреть меню
+              <button
+                className="btn-cta"
+                style={{ background: "white" }}
+                onClick={() => document.getElementById("course")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                Что внутри
               </button>
             </div>
           </div>
           <div className="hero-img">
             <div className="sticker">
-              СВЕЖАК
-              <br />
-              КАЖДЫЙ ДЕНЬ
+              ДОСТУП
+              <br />6 МЕСЯЦЕВ
             </div>
             <div className="floating-tag hidden md:block" style={{ top: "20%", left: "10%" }}>
-              #ЭСТЕТИКА
+              #БЕЗ_БАДОВ
             </div>
             <div className="floating-tag hidden md:block" style={{ bottom: "30%", right: "20%" }}>
-              ОГОНЬ
+              ПРОВЕРЕНО НА СЕБЕ
             </div>
           </div>
         </section>
 
         <div className="marquee">
           <div className="marquee-content">
-            &nbsp; * БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ *
-            БУРГЕРЫ КОТОРЫЕ РВУТ * КРАФТОВЫЕ КОКТЕЙЛИ * ТОЛЬКО РЕТРО ВАЙБ * ОТКРЫТЫ ДО 2:00 * ЛУЧШИЕ В ГОРОДЕ
+            &nbsp; * 20+ ВИДОВ ПАРАЗИТОВ * ЛИЧНАЯ СХЕМА * ТОЛЬКО АПТЕЧНЫЕ ПРЕПАРАТЫ * ПСИХОСОМАТИКА * АНАЛИЗЫ ДО И ПОСЛЕ *
+            20+ ВИДОВ ПАРАЗИТОВ * ЛИЧНАЯ СХЕМА * ТОЛЬКО АПТЕЧНЫЕ ПРЕПАРАТЫ * ПСИХОСОМАТИКА * АНАЛИЗЫ ДО И ПОСЛЕ
           </div>
         </div>
 
-        <section className="section-padding">
+        <section id="course" className="section-padding">
           <div className="section-header">
-            <h2 className="section-title">ВЫБОР ШЕФА</h2>
+            <h2 className="section-title">КТО ЖИВЁТ ВНУТРИ</h2>
             <a
-              href="#"
+              href="#buy"
               className="text-sm md:text-base"
               style={{ color: "var(--dark)", fontWeight: 800, textTransform: "uppercase" }}
             >
-              Всё меню
+              Вся программа
             </a>
           </div>
 
           <div className="menu-grid">
             {/* Item 1 */}
             <div className="menu-card">
-              <span className="menu-tag">Хит продаж</span>
+              <span className="menu-tag">Ленточные</span>
               <img
-                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Классический бургер"
+                src="https://cdn.poehali.dev/files/df7f57e1-8c9d-402c-8871-867ab2a24847.png"
+                alt="Цестоды"
               />
               <div className="menu-card-body">
                 <div
@@ -85,11 +96,11 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Классика</h3>
-                  <span className="price">1 400 ₽</span>
+                  <h3>Цестоды</h3>
+                  <span className="price">до 20 лет</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Тройной смэш из мраморной говядины, фирменный соус, маринованные огурцы на бриоши.
+                  Широкий лентец, бычий и свиной цепень. Вырастают до 10 метров. Вызывают анемию, авитаминоз, кишечную непроходимость.
                 </p>
               </div>
             </div>
@@ -97,11 +108,11 @@ export default function Index() {
             {/* Item 2 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--secondary)" }}>
-                Острое
+                Сосальщики
               </span>
               <img
-                src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Неоновая пицца"
+                src="https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/files/602de184-ed9a-4231-9a5a-11ffb313c8d6.jpg"
+                alt="Трематоды"
               />
               <div className="menu-card-body">
                 <div
@@ -112,21 +123,23 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Электро Пепперони</h3>
-                  <span className="price">1 800 ₽</span>
+                  <h3>Трематоды</h3>
+                  <span className="price">до 25 лет</span>
                 </div>
-                <p style={{ fontSize: "14px", color: "#666" }}>Двойная пепперони, острый мёд, тесто на закваске.</p>
+                <p style={{ fontSize: "14px", color: "#666" }}>
+                  Описторхи, клонорхи, фасциолы. Живут в печени и протоках. Вызывают панкреатит, холангит, цирроз.
+                </p>
               </div>
             </div>
 
             {/* Item 3 */}
             <div className="menu-card">
               <span className="menu-tag" style={{ background: "var(--accent)", color: "var(--dark)" }}>
-                Популярное
+                Круглые
               </span>
               <img
-                src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-                alt="Диско Сауэр"
+                src="https://cdn.poehali.dev/projects/e0f6b191-2506-4eb5-8f95-fd1e65f8f44c/files/602de184-ed9a-4231-9a5a-11ffb313c8d6.jpg"
+                alt="Нематоды"
               />
               <div className="menu-card-body">
                 <div
@@ -137,109 +150,139 @@ export default function Index() {
                     marginBottom: "10px",
                   }}
                 >
-                  <h3>Диско Сауэр</h3>
-                  <span className="price">1 200 ₽</span>
+                  <h3>Нематоды</h3>
+                  <span className="price">мигрируют</span>
                 </div>
                 <p style={{ fontSize: "14px", color: "#666" }}>
-                  Джин, цветок бузины, голубой чай и съедобная золотая пыльца.
+                  Аскариды, острицы, токсокары, трихинеллы. Идут в лёгкие, сердце, мозг, глаза. Дают аллергии, астму, судороги.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <section className="retro-vibe">
+        <section id="about" className="retro-vibe">
           <div>
-            <h2 className="vibe-title">ВАЙБ-ЧЕК ПРОЙДЕН.</h2>
+            <h2 className="vibe-title">НЕСКОЛЬКО ЛЕТ АДА, КОТОРЫЕ ВЫ МОЖЕТЕ НЕ ПОВТОРЯТЬ.</h2>
             <p className="vibe-text">
-              Мы не просто кормим. Мы создаём моменты. От плейлиста хип-хопа 90-х до диванов в стиле 70-х — каждый уголок
-              продуман для твоего идеального кадра. Бронь не нужна, просто приходи с настроением.
+              Я годами не могла решить проблемы с ЖКТ. Гастроэнтерологи лечили «гастрит» — без толку. Мой пытливый мозг вывел меня на паразитологию: я нашла действенную схему, которую не давали ни государственные, ни платные врачи. После антипаразитарки в ЖКТ наконец наступил покой. Я не фармацевт и не продаю БАДы — я человек, который прошёл этот ад и нашёл выход.
             </p>
-            <button className="btn-cta" style={{ background: "var(--dark)", color: "white", borderColor: "white" }}>
-              Наша история
+            <button
+              className="btn-cta"
+              style={{ background: "var(--dark)", color: "white", borderColor: "white" }}
+              onClick={() => document.getElementById("buy")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              Пройти этим маршрутом
             </button>
           </div>
           <div className="vibe-img"></div>
         </section>
 
-        <section className="section-padding">
+        <section id="results" className="section-padding">
           <h2 className="section-title" style={{ marginBottom: "40px", textAlign: "center" }}>
-            @VINYL.DINER
+            РЕЗУЛЬТАТЫ ДО / ПОСЛЕ
           </h2>
-          <div className="social-grid">
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 1"
-              />
-            </div>
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 2"
-              />
-            </div>
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 3"
-              />
-            </div>
-            <div className="social-item">
-              <img
-                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
-                alt="Инста 4"
-              />
-            </div>
+          <div className="menu-grid">
+            {[
+              { icon: "BatteryCharging", text: "Ушла хроническая усталость, вернулась энергия" },
+              { icon: "Wind", text: "Перестал пухнуть живот, ушла отёчность" },
+              { icon: "Activity", text: "Снизился холестерин, нормализовался вес" },
+              { icon: "HeartPulse", text: "Наступил покой в ЖКТ и снизилась тревожность" },
+            ].map((item, i) => (
+              <div key={i} className="menu-card" style={{ padding: "24px" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: "14px" }}>
+                  <span
+                    style={{
+                      background: "var(--accent)",
+                      border: "var(--border)",
+                      padding: "10px",
+                      display: "inline-flex",
+                    }}
+                  >
+                    <Icon name={item.icon} size={24} />
+                  </span>
+                  <p style={{ fontWeight: 700, fontSize: "15px" }}>{item.text}</p>
+                </div>
+              </div>
+            ))}
           </div>
+        </section>
+
+        <section id="buy" className="retro-vibe" style={{ background: "var(--dark)", color: "white" }}>
+          <div>
+            <h2 className="vibe-title" style={{ color: "white" }}>
+              ЗАБЕРИ ДОСТУП НА <span style={{ color: "var(--accent)" }}>6 МЕСЯЦЕВ</span>
+            </h2>
+            <p className="vibe-text" style={{ color: "#ccc" }}>
+              Внутри — личная схема из 6 блоков: история, виды паразитов, пошаговая схема препаратов, психосоматика паразитоза, влияние на лишний вес и анализы до/после. Никакой теории «рекомендаций врачей» — только проверенный на себе протокол.
+            </p>
+            <div style={{ marginBottom: "24px" }}>
+              {[
+                "Проблемы с ЖКТ: вздутие, запоры, тошнота",
+                "Аллергии и высыпания без причины",
+                "Хроническая усталость и низкий гемоглобин",
+                "Тянет на сладкое, скрипите зубами во сне",
+                "Обходили врачей — без толку",
+              ].map((item, i) => (
+                <div key={i} style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "10px" }}>
+                  <Icon name="Check" size={20} style={{ color: "var(--accent)", flexShrink: 0 }} />
+                  <span style={{ fontWeight: 600 }}>{item}</span>
+                </div>
+              ))}
+            </div>
+            <button className="btn-cta" style={{ background: "var(--accent)", color: "var(--dark)", borderColor: "white" }}>
+              Приобрести доступ
+            </button>
+          </div>
+          <div className="vibe-img"></div>
         </section>
       </main>
 
       <footer>
         <div>
-          <div className="footer-logo">VINYL*DINER</div>
+          <div className="footer-logo">ПАРАЗИТам.НЕТ</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
-            Твоё место для еды высокого качества и лоу-фай атмосферы. С 2024, но ощущается как 1974.
+            Автор — Марина Берг, клинический психолог, эксперт по доказательной психосоматике. Личный опыт и проверенная схема, а не БАДы.
           </p>
         </div>
         <div className="footer-links">
           <h4>Навигация</h4>
           <ul>
             <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Меню
+              <a href="#about" style={{ color: "inherit", textDecoration: "none" }}>
+                История
               </a>
             </li>
             <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                О нас
+              <a href="#course" style={{ color: "inherit", textDecoration: "none" }}>
+                Программа
               </a>
             </li>
             <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Политика
+              <a href="#results" style={{ color: "inherit", textDecoration: "none" }}>
+                Результаты
               </a>
             </li>
             <li>
-              <a href="#" style={{ color: "inherit", textDecoration: "none" }}>
-                Условия
+              <a href="#buy" style={{ color: "inherit", textDecoration: "none" }}>
+                Купить доступ
               </a>
             </li>
           </ul>
         </div>
         <div className="footer-links">
-          <h4>Часы работы</h4>
+          <h4>Что внутри</h4>
           <ul>
-            <li>Вт-Чт: 12:00 - 23:00</li>
-            <li>Пт-Сб: 12:00 - 02:00</li>
-            <li>Вс: 11:00 - 21:00</li>
-            <li>Пн: Выходной</li>
+            <li>20+ видов паразитов</li>
+            <li>Схема препаратов</li>
+            <li>Психосоматика паразитоза</li>
+            <li>Анализы до и после</li>
           </ul>
         </div>
         <div className="footer-bottom">
-          <span>2025 VINYL DINER</span>
-          <span>ВКУС КЛАССИКИ</span>
-          <span>IG / TW / TK</span>
+          <span>2025 ПАРАЗИТам.НЕТ</span>
+          <span>ДОСТУП 6 МЕСЯЦЕВ</span>
+          <span>ПРОВЕРЕНО НА СЕБЕ</span>
         </div>
       </footer>
     </>

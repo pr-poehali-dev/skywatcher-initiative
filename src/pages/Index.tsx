@@ -6,7 +6,7 @@ export default function Index() {
       <div className="grain-overlay" />
 
       <header className="header">
-        <div className="logo">ПАРАЗИТам.НЕТ</div>
+        <div className="logo">Паразитам.НЕТ</div>
         <nav>
           <a href="#about">История</a>
           <a href="#course">Программа</a>
@@ -240,7 +240,7 @@ export default function Index() {
 
       <footer>
         <div>
-          <div className="footer-logo">ПАРАЗИТам.НЕТ</div>
+          <div className="footer-logo">Паразитам.НЕТ</div>
           <p style={{ color: "#666", lineHeight: 1.6 }}>
             Автор — Марина Берг, клинический психолог, эксперт по доказательной психосоматике. Личный опыт и проверенная схема, а не БАДы.
           </p>
